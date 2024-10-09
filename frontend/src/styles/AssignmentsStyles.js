@@ -16,7 +16,13 @@ export const Content = styled.div`
 `;
 
 export const AssignmentsContent = styled.div`
-  padding: 20px;
+ 
+   padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e9e5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 `;
 
 export const AssignmentsHeader = styled.h2`
@@ -60,7 +66,7 @@ export const AddAssignmentTextArea = styled.textarea`
 
 export const AddAssignmentButton = styled.button`
   padding: 10px 16px;
-  background-color: #007bff;
+  background-color: #2c3e50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -94,7 +100,7 @@ export const AssignmentDescription = styled.p`
 `;
 
 export const AssignmentButton = styled.button`
-  background-color: #007bff;
+  background-color: #2c3e50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -109,4 +115,48 @@ export const AssignmentButton = styled.button`
 export const AssignmentDoneMessage = styled.p`
   color: #28a745;
   font-weight: bold;
+`;
+
+export const StyledTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin: 25px 0;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  
+  thead tr {
+    background-color: #2c3e50;
+    color: White;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #2c3e50;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }
 `;
